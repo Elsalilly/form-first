@@ -4,62 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
+    <script src="https://kit.fontawesome.com/072cf4aaf6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="form.css">
-    <title>Document</title>
+    <!-- Correct one is <link rel="stylesheet" type="text/css" href="../styles/form.css"> form.css should be in styles folder-->
+    <title>Interactive form</title>
 </head>
 <body>
-    <main>
-        <div class="layout">
-                <div class="red-block">
-                    <div class="information">
-                        <div class="name">
-                            <p class="title-name">FULL NAME</p>
-                            <input type="text" name="name" id="name" class="your-name" placeholder="Your name">
-                        </div>
-                        <div class="line li1"></div>
-            
-                        <div class="email">
-                            <p class="title-email">EMAIL</p>
-                            <input type="text" name="email" id="email" class="yemail" placeholder="Your email">
-                        </div>
-                        <div class="line li2"></div>
-            
-                        <div class="regarding">
-                            <p class="title-messageR">MESSAGE REGARDING</p>
-                            <div class="dropdown-content">
-                                <p class="content">Partner</p>
-                                <p class="content">Parent</p>
-                                <p class="content">Sibling</p>
-                            </div>
-                        </div>
-                        <div class="line li3"></div>
-            
-                        <div class="message">
-                            <p class="title-message">MESSAGE</p>
-                            <input type="text" name="message" id="message" class="your-message" placeholder="Your message">
-                        </div>
-                        <div class="line li4"></div>
-                        <button class="send">Send Message</button>
+    <main class="layout">
+        <form class="form" autocomplete="off">
+            <div class="red-block">
+                <div class="information">
+                    <div class="name">
+                        <label for="name" class="title-name">FULL NAME</label>
+                        <input type="text" name="name" id="name" class="your name-text" placeholder="Your name" required>
                     </div>
+                    <div class="line li1"></div>
+            
+                    <div class="email">
+                        <label for="text" class="title-email">EMAIL</label>
+                        <input type="email" name="email" id="email" class="your email-text" placeholder="Your email" required>
+                    </div>
+                    <div class="line li2"></div>
+            
+                    <div class="regarding">
+                        <label for="select" class="title-messageR">MESSAGE REGARDING</label>
+                        <i class="fa-solid fa-square-caret-down select-down"></i>
+                        <select name="people" class="select" id="select">
+                            <option class="choose" selected>Please choose an option</option>
+                                <option value="jacuzzi">Jacuzzi</option>
+                                <option value="bathtub">Bathtub</option>
+                                <option value="shower">Shower</option>
+                        </select>
+                    </div>
+                    <div class="line li3"></div>
+            
+                    <div class="message">
+                        <label for="text" class="title-message">MESSAGE</label>
+                        <textarea type="text" name="message" id="message" minlength="20" maxlength="600" class="your message-text" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="line li4"></div>
+                    <!-- <button class="send">Send Message</button> -->
+                    <input type="submit" class="send" value="Send Message"/>
                 </div>
-                <div class="yellow-block">
-                    <img class="duck" src="../images/hiclipart 2.png" alt="yellow duck">
-                </div>
-
             </div>
+        </form>
+            <div class="yellow-block">
+                
+            </div>
+            <img class="duck" src="../images/hiclipart.png" alt="yellow duck">
     </main>
-
-<!-- Se över
-        <form class="form">
-            <label for="name" class="label"> Full name</label>
-            <input type="text" name="name" id="name" class="textfield" placeholder="Enter your name">
-
-            <div class="info">
-                <input type="name" placeholder="">
-                <textarea name="" id="hej" cols="20" rows=""></textarea>
-            </div>
- -->
-
 </body>
 </html>

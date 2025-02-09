@@ -28,25 +28,7 @@ body {
     position: relative;
 }
 
-.text {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: #FEFFFF;
-    letter-spacing: 30%;
-}
-
-.title-message, .title-name, .title-email, .title-messageR {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: #FEFFFF;
-    letter-spacing: 10%;
-}
+/* CSS for multiple areas (font, color, line, flexboxes) */
 
 .information {
     max-width: 609px;
@@ -61,6 +43,31 @@ body {
 .line {
     margin-bottom: 20px;
 }
+.your {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FEFFFF;
+}
+
+.title-message, .title-name, .title-email, .title-messageR {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #FEFFFF;
+    letter-spacing: 10%;
+}
+
+.your::placeholder {
+    color: #FEFFFF;
+    letter-spacing: 30%;
+    opacity: 0.7;
+}
+
+/* Full name */
 
 .name {
     width: 400px;
@@ -73,11 +80,27 @@ body {
     background-color: #9DBEBB;
 }
 
+.name-text {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #FEFFFF;
+    letter-spacing: 30%;
+    width: 97%;
+    height: 20px;
+    background-color: #BE0909;
+    border: none;
+    margin-top: 37px;
+    margin-left: 5px;
+    cursor: text;
+}
+
+/* Email */
 
 .email {
     width: 160px;
     height: 72px;
-    margin-bottom: 10px;
 }
 
 .li2 {
@@ -86,45 +109,93 @@ body {
     background-color: #9DBEBB;
 }
 
+.email-text {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #FEFFFF;
+    letter-spacing: 30%;
+    width: 97%;
+    height: 20px;
+    background-color: #BE0909;
+    border: none;
+    margin-top: 37px;
+    margin-left: 5px;
+    cursor: text;
+}
+
+/* Message regarding (option drop-down) */
+
 .regarding {
     width: 213px;
     height: 72px;
+    position: relative;
+}
+
+.select {
+    height: 25px;
+    width: 80px;
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    border:none;
+    background-color: #BE0909;
+    color:#FEFFFF;
+    cursor: pointer;
+    width: 107%;
+    margin-top: 37px;
+    margin-left: 5px;
+/* Taking away the drop-down pointer */
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.select-down {
+    position: absolute;
+    top: 62px;
+    right: -15px;
+    background-color: #BE0909;
+    color: #FFB039;
 }
 
 .li3 {
-    width: 160px;
+    width: 230px;
     height: 1px;
     background-color: #9DBEBB;
 }
 
-
+/* Message area (longer text) */
 .message {
     width: 400px;
     height: 72px;
-    margin-bottom: 10px;
-}
-/*
-.dropdown-content {
-    position: relative;
-    display: inline-block;
 }
 
-.content {
-    display: none;
-    position: absolute;
-    display:flex;
-}
-
-.dropdown-content:hover, .content {
-    display: block;
-}
-*/
 .li4 {
     width: 400px;
     height: 1px;
     background-color: #9DBEBB;
 }
 
+.message-text {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #FEFFFF;
+    letter-spacing: 30%;
+    width: 97%;
+    height: 27px;
+    background-color: #BE0909;
+    border: none;
+    margin-left: 5px;
+    cursor: text;
+    resize: none;
+    padding-top: 2em;
+}
+
+/* button and image */
 .send {
     background-color: #468189;
     width: 202px;
@@ -155,8 +226,7 @@ body {
 .duck {
     min-width: 663px;
     height: 603px;
-    display: inline-block;
+    display: flex;
     position: absolute;
     right: -70px;
-    top: 50px;
 }
