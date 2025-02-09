@@ -103,7 +103,22 @@ body {
     height: 72px;
     margin-bottom: 10px;
 }
+/*
+.dropdown-content {
+    position: relative;
+    display: inline-block;
+}
 
+.content {
+    display: none;
+    position: absolute;
+    display:flex;
+}
+
+.dropdown-content:hover, .content {
+    display: block;
+}
+*/
 .li4 {
     width: 400px;
     height: 1px;

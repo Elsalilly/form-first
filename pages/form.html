@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,30 +15,36 @@
                     <div class="information">
                         <div class="name">
                             <p class="title-name">FULL NAME</p>
+                            <input type="text" name="name" id="name" class="your-name" placeholder="Your name">
                         </div>
                         <div class="line li1"></div>
             
                         <div class="email">
                             <p class="title-email">EMAIL</p>
-                            <div class="text yemail">Your Email</div>
+                            <input type="text" name="email" id="email" class="yemail" placeholder="Your email">
                         </div>
                         <div class="line li2"></div>
             
                         <div class="regarding">
                             <p class="title-messageR">MESSAGE REGARDING</p>
+                            <div class="dropdown-content">
+                                <p class="content">Partner</p>
+                                <p class="content">Parent</p>
+                                <p class="content">Sibling</p>
+                            </div>
                         </div>
                         <div class="line li3"></div>
             
                         <div class="message">
                             <p class="title-message">MESSAGE</p>
-                            <p class="text">Your message</p>
+                            <input type="text" name="message" id="message" class="your-message" placeholder="Your message">
                         </div>
                         <div class="line li4"></div>
                         <button class="send">Send Message</button>
                     </div>
                 </div>
                 <div class="yellow-block">
-                    <img class="duck" src="images/hiclipart 2.png" alt="yellow duck">
+                    <img class="duck" src="../images/hiclipart 2.png" alt="yellow duck">
                 </div>
 
             </div>
