@@ -50,6 +50,11 @@ body {
     color: #FEFFFF;
 }
 
+.your:hover {
+    font-weight: 600;
+    background-color: #a30b0b;
+}
+
 .title-message, .title-name, .title-email, .title-messageR {
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
@@ -159,6 +164,11 @@ body {
     color: #FFB039;
 }
 
+.select:hover {
+    font-weight: 600;
+    background-color: #a30b0b;
+}
+
 .li3 {
     width: 230px;
     height: 1px;
@@ -223,8 +233,8 @@ body {
 }
 
 .duck {
-    width: 663px;
-    height: 603px;
+    max-width: 663px;
+    min-height: 603px;
     position: absolute;
     top: 50px;
     right: -45px;
